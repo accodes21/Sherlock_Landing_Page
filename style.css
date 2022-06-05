@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Mystery+Quest&family=Yeseva+One&display=swap');
 
 
 *{
@@ -49,6 +49,11 @@ nav ul li a{
     font-weight: bold;
 }
 
+.logo{
+    filter: drop-shadow(15px 10px 4px #6a6a6d);
+
+}
+
 .sec0{
     position: relative;
     width: 100%;
@@ -72,6 +77,9 @@ nav ul li a{
 .sec0 #text{
     color: #e7dede;
     font-size: 9vh;
+    font-family: 'Yeseva One', cursive;
+    z-index: 10;
+    margin-left: 40px;
 }
 
 #bg{
@@ -96,24 +104,225 @@ nav ul li a{
     justify-content: space-between;
 }
 
-.sec h2{
+.sec1::before{
+    content:'';
+    position:absolute;
+    top:18px;
+    left:0;
+    width:100%;
+    height:1px;
+    background:linear-gradient(to left,transparent,#fff,transparent);
+}
+
+.sec1::after{
+    content:'';
+    position:absolute;
+    bottom:18px;
+    left:0;
+    width:100%;
+    height:1px;
+    background:linear-gradient(to left,transparent,#fff,transparent);
+}
+
+h2{
     color:#e7dede;
     font-size: 3em;
     text-align: center;
 }
 
-.sec img{
-    /* height:30vh ; */
-    shape-outside:polygon();
-    /* border-radius: 100px; */
-    float: left;
+#hero{
+    margin: auto;
+    display: flex;
+    filter: drop-shadow(15px 10px 4px #6a6a6d);
+}
+
+#para{
+    margin-top: 20px;
+    color: #e7dede;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 .sec p{
     width: 67%;
     margin: auto;
-    margin-top: 20px;
     font-size: 24px;
+}
+
+.sec2{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.book1{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.image img{
+    width: auto;
+    transition:all .4s;
+}
+
+.book1 .text{
+    width: 55%;
+    margin-left: 40px;
+}
+
+.book1 .text #para{
+    position: relative;
+    margin-left: 20px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.book1 .text a{
+    display: inline-block;
+    text-decoration: none;
     color: #e7dede;
     text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.text a:hover{
+    background-color: #e7dede;
+    color: black;
+}
+
+.book2{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.book2 .text{
+    width: 55%;
+    margin-right: 40px;
+}
+
+.book2 .text #para{
+    position: relative;
+    margin-right: 20px;
+    font-size: 22px;
+    text-align: right;
+}
+
+.book2 .text a{
+    /* display: inline-block; */
+    float: right;
+    text-decoration: none;
+    color: #e7dede;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.text a:hover{
+    background-color: #e7dede;
+    color: black;
+}
+
+.image img:hover{
+    transform: rotate(15deg)
+}
+
+.sec3{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #28292b;
+}
+
+.book3{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.book3 .text{
+    width: 55%;
+    margin-left: 40px;
+}
+
+.book3 .text #para{
+    position: relative;
+    margin-left: 20px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.book3 .text a{
+    display: inline-block;
+    text-decoration: none;
+    color: #e7dede;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.text a:hover{
+    background-color: #e7dede;
+    color: black;
+}
+
+.book4{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.book4 .text{
+    width: 55%;
+    margin-right: 40px;
+}
+
+.book4 .text #para{
+    position: relative;
+    margin-right: 20px;
+    font-size: 22px;
+    text-align: right;
+}
+
+.book4 .text a{
+    /* display: inline-block; */
+    float: right;
+    text-decoration: none;
+    color: #e7dede;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.text a:hover{
+    background-color: #e7dede;
+    color: black;
 }
