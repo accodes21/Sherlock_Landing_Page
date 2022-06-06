@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Sherlock Holmes</title>
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-down">
         <a href="#" class="brand">Sherlock</a>
         <nav>
             <ul>
@@ -20,7 +21,8 @@
             </ul>
         </nav>
     </header>
-    <section class="sec0">
+
+    <section class="sec0" data-aos="zoom-out" data-aos-delay="1000">
         <img src="logo.png" class="logo" width="300px"  alt="">
         <h2 id="text"><span>Sherlock Holmes</span></h2>
         <img src="bg.png" id="bg" alt="">
@@ -28,7 +30,7 @@
 
     <section class="sec1">
         <div class="sec">
-            <div class="text">
+            <div class="text" data-aos="zoom-in">
                 <h2>World's Most Famous Detective</h2>
                 <p id="para">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle.
                     Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency
@@ -36,16 +38,16 @@
                     which he employs when investigating cases for a wide variety of clients, including Scotland Yard.
                 </p>
             </div>
-            <img src="hero1.png" id="hero" height="460px" alt="">
+            <img src="hero1.png" id="hero" height="460px" alt="" data-aos="zoom-out" data-aos-delay="500">
         </div>
     </section>
 
     <section class="sec2">
-        <div class="book1">
-            <div class="image">
+        <div class="book1 book">
+            <div class="image" data-aos="fade-left">
                 <img src="books/book1.jpg" height="500px" alt="">
             </div>
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h2>Adventures of Sherlock Holmes</h2>
                 <p id="para">The Adventures of Sherlock Holmes collects the first twelve Sherlock Holmes stories that
                     made him and his creator a household name.
@@ -59,8 +61,8 @@
             </div>
         </div>
 
-        <div class="book2">
-            <div class="text">
+        <div class="book2 book">
+            <div class="text" data-aos="fade-left">
                 <h2>Memoirs of Sherlock Holmes</h2>
                 <p id="para">
                     In The Memoirs of Sherlock Holmes, the consulting detective's notoriety as the arch-despoiler of the schemes concocted by the criminal underworld at last gets the better of him.
@@ -71,18 +73,18 @@
                 </p>
                 <a href="https://www.amazon.in/Memoirs-Sherlock-Holmes-Arthur-Conan/dp/9388144309" target="_blank" >BUY NOW</a>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-right">
                 <img src="books/book2.jpg" height="500px" alt="">
             </div>
         </div>
     </section>
 
     <section class="sec3">
-        <div class="book3">
+        <div class="book3 book">
             <div class="image">
-                <img src="books/book3.jpg" height="500px" alt="">
+                <img src="books/book3.jpg" height="500px" alt="" data-aos="fade-up-left">
             </div>
-            <div class="text">
+            <div class="text" data-aos="fade-up-right">
                 <h2>Return of Sherlock Holmes</h2>
                 <p id="para">
                     Missing, presumed dead, for three years, Sherlock Holmes returns triumphantly to his dear companion Dr Watson. And not before time! London has never been in more need of his extraordinary services: a murderous individual with an air gun stalks the city.
@@ -94,8 +96,8 @@
             </div>
         </div>
 
-        <div class="book4">
-            <div class="text">
+        <div class="book4 book">
+            <div class="text" data-aos="fade-down-left">
                 <h2>The Sign of the Four</h2>
                 <p id="para">
                     As a dense yellow fog swirls through the streets of London, a deep melancholy has descended on Sherlock Holmes.His mood is only lifted by a visit from a young woman - Mary Morstan, whose father vanished ten years before. Four years later she began to receive an exquisite gift every year: a large, lustrous pearl.
@@ -106,11 +108,15 @@
                 </p>
                 <a href="https://www.amazon.in/Sign-Four-Arthur-Conan-Doyle/dp/9388318021" target="_blank" >BUY NOW</a>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-down-right">
                 <img src="books/book4.jpg" height="500px" alt="">
             </div>
         </div>
     </section>
+    <footer>
+        <p>Copyright &copy; <a href="https://accodes21.github.io/Profile/" target="_blank">Aarya Chopkar</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
